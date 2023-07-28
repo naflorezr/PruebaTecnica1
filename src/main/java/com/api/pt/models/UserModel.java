@@ -48,8 +48,9 @@ public class UserModel {
     @Column
     @NotEmpty
     private Double salario;
-
+    @Column
     private Period tvinculacion;
+    @Column
     private Period edad;
     
     public Period getTvinculacion() {

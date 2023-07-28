@@ -21,12 +21,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping
+    @GetMapping(path="/allusers")
     public ArrayList<UserModel> getUsers(){
         return this.userService.getUsers();
     }
 
-    @PostMapping
+    @PostMapping(path="/save")
     public UserModel saveUser(@Valid @RequestBody UserModel user){
         return this.userService.saveUser(user);
     }
